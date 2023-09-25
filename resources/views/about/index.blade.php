@@ -1,5 +1,7 @@
 @extends('layouts.layout')
 
+@section('title', '| A propos' )
+
 @section('charles-content')
     @include('about.partials._baniere')
 

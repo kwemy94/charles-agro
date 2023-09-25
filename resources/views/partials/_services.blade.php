@@ -99,8 +99,10 @@
                         <img src="{{ asset('template/images/icon-8.png')}}" alt="Image" class="img-fluid">
                     </div>
                     <div class="service-1-content">
-                        <h3 class="service-heading">Vegetable selling</h3>
-                        <p>Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie</p>
+                        <h3 class="service-heading">PIf de plantain</h3>
+                        <p>
+                            Vente des plants PIF de bananier plantain
+                        </p>
                     </div>
                 </div>
             </div>

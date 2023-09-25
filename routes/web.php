@@ -23,3 +23,6 @@ Route::get('/', function () {
 Route::resource('contact-us', ContactController::class);
 Route::resource('our-services', ServiceController::class);
 Route::resource('about-us', AboutController::class);
+
+
+Route::get('/reload-captcha', [ContactController::class, 'reloadCaptcha'])->name('reload.captcha');

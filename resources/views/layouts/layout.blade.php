@@ -39,7 +39,10 @@
     <link rel="stylesheet" href="{{ asset('template/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
 
-    <title>Charles K Agro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Charles K Agro @yield('title')</title>
 
 
 </head>

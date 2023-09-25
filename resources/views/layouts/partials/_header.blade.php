@@ -26,7 +26,7 @@
                     </div>
                     <div class="text">
                         <span class="h4 d-block">+237 6 76 15 27 95</span>
-                        <span class="caption-text">Call us</span>
+                        {{-- <span class="caption-text">Call us</span> --}}
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                     </div>
                     <div class="text">
                         <span class="h4 d-block">charleskamga85@gmail.com</span>
-                        <span class="caption-text">Email us</span>
+                        {{-- <span class="caption-text">Email us</span> --}}
                     </div>
                 </div>
             </div>
@@ -61,15 +61,15 @@
                     <nav class="site-navigation position-relative text-right" role="navigation">
                         <ul class="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block">
                             <li class="{{request()->routeIs('home')? 'active': ''}}">
-                                <a href="{{route('home')}}" class="nav-link text-left">Home</a>
+                                <a href="{{route('home')}}" class="nav-link text-left">Accueil</a>
                             </li>
 
                             <li class="{{request()->routeIs('about-us.index')? 'active': ''}}">
-                                <a href="{{route('about-us.index')}}" class="nav-link text-left">About Us</a>
+                                <a href="{{route('about-us.index')}}" class="nav-link text-left">A propos</a>
                             </li>
 
                             <li class="{{request()->routeIs('our-services.index')? 'active': ''}}">
-                                <a href="{{route('our-services.index')}}" class="nav-link text-left">Our Services</a>
+                                <a href="{{route('our-services.index')}}" class="nav-link text-left">Nos Services</a>
                             </li>
 
                             {{-- <li>

@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7 justify-content-center mx-auto text-center" data-aos="fade-up">
-                    <h1>Farming is the best solution of worlds starvation</h1>
+                    <h1>L'agriculture est la meilleure solution à la famine dans le monde</h1>
                 </div>
             </div>
         </div>
@@ -14,7 +14,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 justify-content-center mx-auto text-center" data-aos="fade-up">
                     <span class="d-block"></span>
-                    <h1>Organic vegetables is good for health</h1>
+                    <h1>Environnement propice pour l'agriculture organique bio</h1>
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 justify-content-center mx-auto text-center" data-aos="fade-up">
                     <span class="d-block"></span>
-                    <h1>Providing Fresh Produce Every Single Day</h1>
+                    <h1>Fournir des produits frais chaque jour</h1>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 justify-content-center mx-auto text-center" data-aos="fade-up">
                     <span class="d-block"></span>
-                    <h1>Farming as a Passion</h1>
+                    <h1>L'agriculture comme passion</h1>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 justify-content-center mx-auto text-center" data-aos="fade-up">
                     <span class="d-block"></span>
-                    <h1>Good Food For All</h1>
+                    <h1>Bonne nourriture pour tous</h1>
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 justify-content-center mx-auto text-center" data-aos="fade-up">
                     <span class="d-block"></span>
-                    <h1>Plants Make Life Better</h1>
+                    <h1>Les plantes rendent la vie meilleure</h1>
                 </div>
             </div>
         </div>

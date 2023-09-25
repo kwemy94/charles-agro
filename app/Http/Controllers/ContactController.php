@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Mail\MessageGoogle;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Validator;
 use App\Repositories\Contact\ContactRepository;
 
 class ContactController extends Controller
@@ -15,7 +18,7 @@ class ContactController extends Controller
         $this->contactRepository = $contactRepository;
     }
 
-    
+
     /**
      * Display a listing of the resource.
      */
@@ -24,51 +27,62 @@ class ContactController extends Controller
         return view('contact.index');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-        //
+        // dd($request->post());
+        $validation = Validator::make(
+            $request->post(),
+            [
+                'name' => 'required',
+                'phone' => 'required',
+                'message' => 'required',
+                'captcha' => 'required|captcha'
+            ],
+
+            [
+                'name.required' => 'Le prénom est obligatoire',
+                'phone.required' => 'Le numéro de téléphone est obligatoire',
+                'message' => "Le message ne peut être vide",
+                'captcha.captcha' => 'Invalid captcha code.'
+            ]
+        )->validate();
+
+        // if ($validation->fails()) {
+        //     return redirect()->back()->
+        // }
+
+        $inputs = $request->except('_token');
+
+        $inputs['name'] = $inputs['name'] . ' ' . $inputs['surname'];
+        unset($inputs['surname']);
+
+        try {
+            $contact = $this->contactRepository->store($inputs);
+
+            Mail::to('grantshell0@gmail.com')->bcc("tiwagrant@yahoo.fr")
+                ->queue(new MessageGoogle($inputs));
+        } catch (\Throwable $th) {
+            //throw $th;
+            // dd($th);
+            if (!$contact) {
+                return redirect()->back()->with('error', 'Oups! une erreur s\'est produite');
+            }
+
+            $sendMail = 0;
+        }
+
+        # Email non envoyé
+        if (isset($sendMail)) {
+            $this->contactRepository->update($contact->id, ['status' => 0]);
+        }
+
+        return redirect()->back()->with('success', 'Message envoyé');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Contact $contact)
-    {
-        //
-    }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Contact $contact)
+    public function reloadCaptcha()
     {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Contact $contact)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Contact $contact)
-    {
-        //
+        return response()->json(['captcha' => captcha_img()]);
     }
 }

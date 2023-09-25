@@ -2,7 +2,7 @@
     <div class="container">
       <div class="row align-items-center text-center">
         <div class="col-lg-12 mt-5" data-aos="fade-up">
-          <h1>Our Services</h1>
+          <h1>Nos Services</h1>
           <p class="text-white text-center">
             <a href="{{route('home')}}">Home</a>
             <span class="mx-2">/</span>

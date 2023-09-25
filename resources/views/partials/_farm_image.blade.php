@@ -2,8 +2,8 @@
     <div class="container">
 
         <div class="mb-5">
-            <h3 class="section-subtitle text-white opacity-50">What we do</h3>
-            <h2 class="section-title mb-4">Explore Our <strong>Farm</strong></h2>
+            <h3 class="section-subtitle text-white opacity-50">CE QUE NOUS FAISONS</h3>
+            <h2 class="section-title mb-4">Explorez notre <strong>ferme</strong></h2>
         </div>
 
         <div class="projects-carousel-wrap">
@@ -11,7 +11,7 @@
                 <div class="project-item">
                     <div class="project-item-contents">
                         <a href="#">
-                            <span class="project-item-category">We do</span>
+                            <span class="project-item-category">Nous faisons</span>
                             <h2 class="project-item-title">
                                 Planting
                             </h2>
@@ -22,9 +22,9 @@
                 <div class="project-item">
                     <div class="project-item-contents">
                         <a href="#">
-                            <span class="project-item-category">We do</span>
+                            <span class="project-item-category">Nous faisons</span>
                             <h2 class="project-item-title">
-                                Mulching
+                                Paillage
                             </h2>
                         </a>
                     </div>
@@ -33,9 +33,9 @@
                 <div class="project-item">
                     <div class="project-item-contents">
                         <a href="#">
-                            <span class="project-item-category">We do</span>
+                            <span class="project-item-category">Nous faisons</span>
                             <h2 class="project-item-title">
-                                Watering
+                                Arrosage
                             </h2>
                         </a>
                     </div>
@@ -44,9 +44,9 @@
                 <div class="project-item">
                     <div class="project-item-contents">
                         <a href="#">
-                            <span class="project-item-category">We do</span>
+                            <span class="project-item-category">Nous faisons</span>
                             <h2 class="project-item-title">
-                                Fertilizing
+                                Fertilisation
                             </h2>
                         </a>
                     </div>
@@ -56,9 +56,9 @@
                 <div class="project-item">
                     <div class="project-item-contents">
                         <a href="#">
-                            <span class="project-item-category">We do</span>
+                            <span class="project-item-category">Nous faisons</span>
                             <h2 class="project-item-title">
-                                Harvesting
+                                Récoltes
                             </h2>
                         </a>
                     </div>
@@ -67,9 +67,9 @@
                 <div class="project-item">
                     <div class="project-item-contents">
                         <a href="#">
-                            <span class="project-item-category">We do</span>
+                            <span class="project-item-category">Nous faisons</span>
                             <h2 class="project-item-title">
-                                Mowing
+                                Fauchages
                             </h2>
                         </a>
                     </div>
@@ -78,9 +78,9 @@
                 <div class="project-item">
                     <div class="project-item-contents">
                         <a href="#">
-                            <span class="project-item-category">We do</span>
+                            <span class="project-item-category">Nous faisons</span>
                             <h2 class="project-item-title">
-                                Seeding Plants
+                                plants de semis
                             </h2>
                         </a>
                     </div>
